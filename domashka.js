@@ -17,9 +17,7 @@ if (burger >= 4 && potatofri >= 4) {
     console.log("Ми йдемо в інше кафе");
   }
 
-
-
-
+ 
 
 другий варіант 
 
@@ -32,6 +30,19 @@ if (burger >= 4 && potatofri >= 4) {
   } else {
     console.log("Ми йдемо в інше кафе");
   }
+
+ФУНКЦІЯ 
+
+function checkFood(burgers, potatofri) {
+    if (burgers >= 4 && potatofri >= 4) {
+      console.log("Ми поїли");
+    } else {
+      console.log("Ми йдемо в інше кафе");
+    }
+  }
+  
+  checkFood (4 , 4)
+
 
 
 */
@@ -49,6 +60,18 @@ if (burger >= 4 && potatofri >= 4) {
     } else {
       console.log('')
     }
+
+    Функція
+
+    function priceOld (price){
+  if ( price >= 1000 && price <= 1900){
+     console.log(price)
+  } else {
+    console.log('')
+  }
+}
+
+  priceOld (1500)
 
 */
 
@@ -77,6 +100,34 @@ let price = 1500
       console.log('')
     }
 
+
+функція 
+
+
+function priceOld (price){
+if ( price < 1000 || price > 1900){
+   console.log(price)
+} else {
+  console.log('')
+}
+}
+
+priceOld (150)
+
+
+
+
+
+function priceOld (price){
+if ( !(price >= 1000 && price <= 1900)){
+       console.log(price)
+    } else {
+      console.log('')
+    }
+}
+
+priceOld (150)
+
  
 За номером пори року вивести назву цієї пори року використовуючи оператор if-else-if
 Результат виводити в консоль.   
@@ -96,8 +147,28 @@ let season = 1
     } else  {
       console.log('')
     }
-      
+
+
+функція 
+
+function seasonOld (season){
+    if ( season === 1 ){
+       console.log('spring')
+    } else if (season === 2) {
+      console.log('summer')
+    } else if (season === 3) {
+      console.log('autumn')
+    } else if (season === 4) {
+      console.log('winter')
+    } else  {
+      console.log('')
+    }
+}
+
+seasonOld (2)
     
+
+
  Задано 3 числа (a, b, c), які не рівні між собою.
     Визначити середнє мід цими трьома числами
     (не середнє арифметичне значення, а яке з трьох заданих чисел среднє за значенням) використовуючи оператор if-else.
@@ -118,6 +189,22 @@ if (a > b && b > c) {
 } else {
   console.log('')
 }
+
+функція 
+
+function averageValue (a, b, c){
+if (a > b && b > c) {
+  console.log(b)
+} else if (b > a && a > c){
+  console.log(a)
+} else if (b > c && c > a){
+  console.log(c)
+} else {
+  console.log('')
+}
+}
+   
+averagValue (4, 9, 1)
    
 */
  
@@ -154,6 +241,41 @@ if (a > b && b > c) {
         break;
     }
 
+функція 
+
+function averageValue (weekday){
+
+switch (weekday) {
+  case 1:
+    console.log("Понеділок");
+    break;
+  case 2:
+    console.log("Вівторок");
+    break;
+  case 3:
+    console.log("Середа");
+    break;
+  case 4:
+    console.log("Четвер");
+    break;
+  case 5:
+    console.log("П'ятниця");
+    break;
+  case 6:
+    console.log("Субота");
+    break;
+  case 7:
+    console.log("Неділя");
+    break;
+  default:
+    console.log("Невірний номер дня тижня");
+    break;
+}
+
+}
+
+averageValue (5)
+
 
 
 За допомогою switch реалізуйте обчислення виразу, передаючи у switch, як параметр, символ математичної операції.
@@ -182,3 +304,29 @@ switch (operator) {
 }
 
 console.log(result);
+
+функція 
+
+function calculation (operator, number1, number2){
+
+switch (operator) {
+  case "+":
+    result = number1 + number2;
+    break;
+  case "-":
+    result = number1 - number2;
+    break;
+  case "*":
+    result = number1 * number2;
+    break;
+  case "/":
+    result = number1 / number2;
+    break; 
+}
+console.log(result);
+
+}
+
+calculation (`+`, 2, 4)
+
+
